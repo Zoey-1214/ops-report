@@ -9,12 +9,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Micr
 h2{color:#333;border-bottom:3px solid #4472C4;padding-bottom:10px;font-size:18px}
 .summary{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:14px}
 .summary span{margin-right:18px;display:inline-block;margin-bottom:5px}
+.t1box{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:13px;border-left:4px solid #f39c12}
 .job-section{background:#fff;border-radius:10px;margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
 .job-title{padding:10px 16px;font-size:14px;font-weight:bold;color:#fff;display:flex;justify-content:space-between;align-items:center}
 .job-title span{font-size:12px;font-weight:normal;opacity:.9}
-table{border-collapse:collapse;width:100%;font-size:13px}
-th{background:#f8f9fa;color:#555;padding:9px 6px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
-td{padding:8px 6px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+table{border-collapse:collapse;width:100%;font-size:12px}
+th{background:#f8f9fa;color:#555;padding:8px 4px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
+td{padding:7px 4px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
 tr:hover{background:#f5f8ff}
 .high{color:#e74c3c;font-weight:bold}.good{color:#27ae60;font-weight:bold}.warn{color:#f39c12}
 .footer{color:#999;font-size:12px;margin-top:15px;text-align:center}
@@ -26,43 +27,47 @@ tr:hover{background:#f5f8ff}
 <span>&#128101; 运维人数：<b>19</b></span>
 <span>&#128176; 薪资合计：<b>&yen;150,758</b></span>
 </div>
+<div class="t1box">
+<b>T-1数据（薪资2026/5/9 / 调度2026-05-20）vs T-2变化：</b><br>
+T-1薪资：&yen;8,558（较T-2 <span style="color:#e74c3c;">+79</span>）&nbsp;&nbsp;T-1调度量：1247（较T-2 <span style="color:#e74c3c;">+612</span>）
+</div>
 <div class="job-section">
 <div class="job-title" style="background:#4472C4;">司机（11人）<span>小计 &yen;134,272</span></div>
 <table>
-<tr><th>姓名</th><th>薪资(元)</th><th>出勤天数</th><th>日均薪资</th><th>调度量</th><th>12H出单率</th><th>24H出单率</th></tr>
-<tr style="background:#EBF0FA;"><td>何成云</td><td>&yen;23,747</td><td>19</td><td class="high">&yen;1,250</td><td>3157</td><td class="warn">79%</td><td class="good">95%</td></tr>
-<tr style="background:#EBF0FA;"><td>何祥凤</td><td>&yen;23,554</td><td>20</td><td class="high">&yen;1,178</td><td>3224</td><td class="warn">60%</td><td class="warn">76%</td></tr>
-<tr style="background:#EBF0FA;"><td>黄田发</td><td>&yen;21,308</td><td>19</td><td class="high">&yen;1,121</td><td>2377</td><td class="warn">64%</td><td class="good">82%</td></tr>
-<tr style="background:#EBF0FA;"><td>李华勇</td><td>&yen;13,453</td><td>19</td><td>&yen;708</td><td>2072</td><td class="warn">68%</td><td class="good">91%</td></tr>
-<tr style="background:#EBF0FA;"><td>于传洋</td><td>&yen;13,598</td><td>20</td><td>&yen;680</td><td>2664</td><td class="warn">76%</td><td class="good">89%</td></tr>
-<tr style="background:#EBF0FA;"><td>王效银</td><td>&yen;9,556</td><td>18</td><td>&yen;531</td><td>1411</td><td class="warn">76%</td><td class="good">90%</td></tr>
-<tr style="background:#EBF0FA;"><td>陈克余</td><td>&yen;8,130</td><td>20</td><td>&yen;407</td><td>3624</td><td class="good">87%</td><td class="good">97%</td></tr>
-<tr style="background:#EBF0FA;"><td>郭中林</td><td>&yen;7,039</td><td>18</td><td>&yen;391</td><td>861</td><td class="warn">67%</td><td class="good">86%</td></tr>
-<tr style="background:#EBF0FA;"><td>王超</td><td>&yen;6,353</td><td>17</td><td>&yen;374</td><td>3725</td><td class="warn">74%</td><td class="good">92%</td></tr>
-<tr style="background:#EBF0FA;"><td>李文育</td><td>&yen;5,614</td><td>20</td><td>&yen;281</td><td>329</td><td class="warn">71%</td><td class="good">87%</td></tr>
-<tr style="background:#EBF0FA;"><td>李生才</td><td>&yen;1,921</td><td>12</td><td>&yen;160</td><td>972</td><td class="high">36%</td><td class="warn">72%</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
+<tr style="background:#EBF0FA;"><td>何成云</td><td>&yen;23,747</td><td class="high">&yen;1,250</td><td>&yen;1,432</td><td><span style="color:#e74c3c;">+39</span></td><td>3157</td><td>185</td><td><span style="color:#e74c3c;">+185</span></td><td class="warn">79%</td></tr>
+<tr style="background:#EBF0FA;"><td>何祥凤</td><td>&yen;23,554</td><td class="high">&yen;1,178</td><td>&yen;1,180</td><td><span style="color:#27ae60;">-89</span></td><td>3224</td><td>145</td><td><span style="color:#e74c3c;">+57</span></td><td class="warn">60%</td></tr>
+<tr style="background:#EBF0FA;"><td>黄田发</td><td>&yen;21,308</td><td class="high">&yen;1,121</td><td>&yen;1,289</td><td><span style="color:#e74c3c;">+42</span></td><td>2377</td><td>139</td><td><span style="color:#e74c3c;">+139</span></td><td class="warn">64%</td></tr>
+<tr style="background:#EBF0FA;"><td>李华勇</td><td>&yen;13,453</td><td>&yen;708</td><td>&yen;638</td><td><span style="color:#e74c3c;">+5</span></td><td>2072</td><td>162</td><td><span style="color:#e74c3c;">+17</span></td><td class="warn">68%</td></tr>
+<tr style="background:#EBF0FA;"><td>于传洋</td><td>&yen;13,598</td><td>&yen;680</td><td>&yen;750</td><td><span style="color:#e74c3c;">+103</span></td><td>2664</td><td>79</td><td><span style="color:#e74c3c;">+4</span></td><td class="warn">76%</td></tr>
+<tr style="background:#EBF0FA;"><td>王效银</td><td>&yen;9,556</td><td>&yen;531</td><td>&yen;534</td><td><span style="color:#27ae60;">-90</span></td><td>1411</td><td>99</td><td><span style="color:#e74c3c;">+10</span></td><td class="warn">76%</td></tr>
+<tr style="background:#EBF0FA;"><td>陈克余</td><td>&yen;8,130</td><td>&yen;407</td><td>&yen;487</td><td><span style="color:#27ae60;">-26</span></td><td>3624</td><td>166</td><td><span style="color:#e74c3c;">+5</span></td><td class="good">87%</td></tr>
+<tr style="background:#EBF0FA;"><td>郭中林</td><td>&yen;7,039</td><td>&yen;391</td><td>&yen;354</td><td><span style="color:#27ae60;">-19</span></td><td>861</td><td>58</td><td><span style="color:#27ae60;">-19</span></td><td class="warn">67%</td></tr>
+<tr style="background:#EBF0FA;"><td>王超</td><td>&yen;6,353</td><td>&yen;374</td><td>&yen;396</td><td><span style="color:#e74c3c;">+24</span></td><td>3725</td><td>172</td><td><span style="color:#e74c3c;">+172</span></td><td class="warn">74%</td></tr>
+<tr style="background:#EBF0FA;"><td>李文育</td><td>&yen;5,614</td><td>&yen;281</td><td>&yen;352</td><td><span style="color:#e74c3c;">+32</span></td><td>329</td><td>42</td><td><span style="color:#e74c3c;">+42</span></td><td class="warn">71%</td></tr>
+<tr style="background:#EBF0FA;"><td>李生才</td><td>&yen;1,921</td><td>&yen;160</td><td>&yen;223</td><td><span style="color:#e74c3c;">+73</span></td><td>972</td><td>0</td><td><span style="color:#999;">-</span></td><td class="high">36%</td></tr>
 </table>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#27AE60;">定点（5人）<span>小计 &yen;9,820</span></div>
 <table>
-<tr><th>姓名</th><th>薪资(元)</th><th>出勤天数</th><th>日均薪资</th><th>调度量</th><th>12H出单率</th><th>24H出单率</th></tr>
-<tr style="background:#E8F8F0;"><td>贾永珍</td><td>&yen;2,120</td><td>15</td><td>&yen;141</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>张传保</td><td>&yen;2,240</td><td>16</td><td>&yen;140</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>王振蓉</td><td>&yen;2,660</td><td>19</td><td>&yen;140</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>郭小宝</td><td>&yen;2,520</td><td>18</td><td>&yen;140</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>李文汉</td><td>&yen;280</td><td>7</td><td>&yen;40</td><td>0</td><td>-</td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
+<tr style="background:#E8F8F0;"><td>贾永珍</td><td>&yen;2,120</td><td>&yen;141</td><td>&yen;140</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>张传保</td><td>&yen;2,240</td><td>&yen;140</td><td>&yen;140</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>王振蓉</td><td>&yen;2,660</td><td>&yen;140</td><td>&yen;140</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>郭小宝</td><td>&yen;2,520</td><td>&yen;140</td><td>&yen;140</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>李文汉</td><td>&yen;280</td><td>&yen;40</td><td>&yen;60</td><td><span style="color:#e74c3c;">+60</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
 </table>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#E67E22;">资保（3人）<span>小计 &yen;6,666</span></div>
 <table>
-<tr><th>姓名</th><th>薪资(元)</th><th>出勤天数</th><th>日均薪资</th><th>调度量</th><th>12H出单率</th><th>24H出单率</th></tr>
-<tr style="background:#FDF2E9;"><td>徐亮</td><td>&yen;2,919</td><td>20</td><td>&yen;146</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#FDF2E9;"><td>蒋永强</td><td>&yen;2,377</td><td>17</td><td>&yen;140</td><td>0</td><td>-</td><td>-</td></tr>
-<tr style="background:#FDF2E9;"><td>李再山</td><td>&yen;1,370</td><td>17</td><td>&yen;81</td><td>0</td><td>-</td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
+<tr style="background:#FDF2E9;"><td>徐亮</td><td>&yen;2,919</td><td>&yen;146</td><td>&yen;200</td><td><span style="color:#e74c3c;">+23</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#FDF2E9;"><td>蒋永强</td><td>&yen;2,377</td><td>&yen;140</td><td>&yen;0</td><td><span style="color:#27ae60;">-67</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr style="background:#FDF2E9;"><td>李再山</td><td>&yen;1,370</td><td>&yen;81</td><td>&yen;103</td><td><span style="color:#27ae60;">-30</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
 </table>
 </div>
-<p class="footer">数据统计周期：2026年5月1日-5月20日 | 日均薪资=薪资/实际出勤天数</p>
+<p class="footer">薪资周期5/1-5/9 | 调度周期5/1-5/20 | 日均薪资=薪资/实际出勤天数</p>
 </body>
 </html>
