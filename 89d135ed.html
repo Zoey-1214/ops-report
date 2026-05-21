@@ -7,79 +7,77 @@
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;padding:15px;background:#f0f2f5;margin:0}
 h2{color:#333;border-bottom:3px solid #4472C4;padding-bottom:10px;font-size:18px}
-.summary{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:14px}
-.summary span{margin-right:18px;display:inline-block;margin-bottom:5px}
-.t1box{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:13px;border-left:4px solid #f39c12}
-.job-section{background:#fff;border-radius:10px;margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
+.card{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:13px;line-height:1.8}
+.t1card{border-left:4px solid #f39c12}
+.job-section{background:#fff;border-radius:10px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
 .job-title{padding:10px 16px;font-size:14px;font-weight:bold;color:#fff;display:flex;justify-content:space-between;align-items:center}
 .job-title span{font-size:12px;font-weight:normal;opacity:.9}
-table{border-collapse:collapse;width:100%;font-size:12px}
-th{background:#f8f9fa;color:#555;padding:8px 4px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
-td{padding:7px 4px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+table{border-collapse:collapse;width:100%;font-size:11px}
+th{background:#f8f9fa;color:#555;padding:7px 3px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
+td{padding:6px 3px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
 tr:hover{background:#f5f8ff}
 .high{color:#e74c3c;font-weight:bold}.good{color:#27ae60;font-weight:bold}.warn{color:#f39c12}
-.footer{color:#999;font-size:12px;margin-top:15px;text-align:center}
+.footer{color:#999;font-size:11px;margin-top:15px;text-align:center}
 </style>
 </head>
 <body>
 <h2>&#128202; 刘永振 - 运维指标明细</h2>
-<div class="summary">
-<span>&#128101; 运维人数：<b>25</b></span>
-<span>&#128176; 薪资合计：<b>&yen;145,554</b></span>
+<div class="card">
+&#128101; 运维人数：<b>22</b> &nbsp;&nbsp; &#128176; 薪资合计：<b>&yen;117,004</b>
 </div>
-<div class="t1box">
-<b>T-1数据（薪资2026/5/9 / 调度2026-05-20）vs T-2变化：</b><br>
-T-1薪资：&yen;6,947（较T-2 <span style="color:#e74c3c;">+768</span>）&nbsp;&nbsp;T-1调度量：1057（较T-2 <span style="color:#e74c3c;">+524</span>）
+<div class="card t1card">
+<b>&#9200; T-1(05/20) vs T-2(05/19)</b><br>
+薪资：T-1 &yen;3,833 | T-2 &yen;2,457 | 变化 <span style="color:#e74c3c;">+1,375</span><br>
+调度量：T-1 742 | T-2 356 | 变化 <span style="color:#e74c3c;">+386</span><br>
+12H出单率：T-1 54% | T-2 53% | 变化 <span style="color:#27ae60;">+2%</span><br>
+24H出单率：T-1 54% | T-2 89% | 变化 <span style="color:#e74c3c;">-34%</span>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#3498DB;">仓库（4人）<span>小计 &yen;22,353</span></div>
 <table>
-<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
-<tr style="background:#EBF5FB;"><td>樊庆伟</td><td>&yen;10,117</td><td>&yen;506</td><td>&yen;258</td><td><span style="color:#e74c3c;">+40</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#EBF5FB;"><td>樊兆君</td><td>&yen;8,636</td><td>&yen;432</td><td>&yen;412</td><td><span style="color:#27ae60;">-34</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#EBF5FB;"><td>张孝荣</td><td>&yen;3,600</td><td>&yen;180</td><td>&yen;180</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#EBF5FB;"><td>张雪峰</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>vs T-2</th><th>调度量</th><th>T-1调度</th><th>vs T-2</th><th>12H率</th><th>T-1 12H</th><th>vs T-2</th><th>24H率</th><th>T-1 24H</th><th>vs T-2</th></tr>
+<tr style="background:#EBF5FB;"><td>樊庆伟</td><td>&yen;10,117</td><td>&yen;506</td><td>&yen;388</td><td><span style="color:#e74c3c;">+208</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#EBF5FB;"><td>樊兆君</td><td>&yen;8,636</td><td>&yen;432</td><td>&yen;452</td><td><span style="color:#e74c3c;">+42</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#EBF5FB;"><td>张孝荣</td><td>&yen;3,600</td><td>&yen;180</td><td>&yen;180</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#EBF5FB;"><td>张雪峰</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 </div>
 <div class="job-section">
-<div class="job-title" style="background:#4472C4;">司机（12人）<span>小计 &yen;89,092</span></div>
+<div class="job-title" style="background:#4472C4;">司机（9人）<span>小计 &yen;60,541</span></div>
 <table>
-<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
-<tr style="background:#EBF0FA;"><td>杨飞</td><td>&yen;12,582</td><td>&yen;629</td><td>&yen;654</td><td><span style="color:#e74c3c;">+188</span></td><td>4760</td><td>236</td><td><span style="color:#e74c3c;">+76</span></td><td class="warn">63%</td></tr>
-<tr style="background:#EBF0FA;"><td>付胜国</td><td>&yen;11,427</td><td>&yen;571</td><td>&yen;514</td><td><span style="color:#e74c3c;">+15</span></td><td>3923</td><td>151</td><td><span style="color:#e74c3c;">+51</span></td><td class="warn">79%</td></tr>
-<tr style="background:#EBF0FA;"><td>付胜国</td><td>&yen;11,427</td><td>&yen;571</td><td>&yen;514</td><td><span style="color:#e74c3c;">+15</span></td><td>3923</td><td>151</td><td><span style="color:#e74c3c;">+51</span></td><td class="warn">79%</td></tr>
-<tr style="background:#EBF0FA;"><td>钱绍波</td><td>&yen;9,870</td><td>&yen;519</td><td>&yen;524</td><td><span style="color:#27ae60;">-4</span></td><td>3183</td><td>164</td><td><span style="color:#e74c3c;">+87</span></td><td class="warn">79%</td></tr>
-<tr style="background:#EBF0FA;"><td>钱绍波</td><td>&yen;9,870</td><td>&yen;519</td><td>&yen;524</td><td><span style="color:#27ae60;">-4</span></td><td>3183</td><td>164</td><td><span style="color:#e74c3c;">+87</span></td><td class="warn">79%</td></tr>
-<tr style="background:#EBF0FA;"><td>陈敏</td><td>&yen;7,254</td><td>&yen;518</td><td>&yen;679</td><td><span style="color:#e74c3c;">+136</span></td><td>2091</td><td>0</td><td><span style="color:#999;">-</span></td><td class="warn">70%</td></tr>
-<tr style="background:#EBF0FA;"><td>陈敏</td><td>&yen;7,254</td><td>&yen;518</td><td>&yen;679</td><td><span style="color:#e74c3c;">+136</span></td><td>2091</td><td>0</td><td><span style="color:#999;">-</span></td><td class="warn">70%</td></tr>
-<tr style="background:#EBF0FA;"><td>王保松</td><td>&yen;6,374</td><td>&yen;398</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>90</td><td>68</td><td><span style="color:#e74c3c;">+68</span></td><td class="high">19%</td></tr>
-<tr style="background:#EBF0FA;"><td>王赐福</td><td>&yen;5,562</td><td>&yen;327</td><td>&yen;419</td><td><span style="color:#e74c3c;">+70</span></td><td>2358</td><td>10</td><td><span style="color:#e74c3c;">+10</span></td><td class="warn">59%</td></tr>
-<tr style="background:#EBF0FA;"><td>冯训季</td><td>&yen;4,418</td><td>&yen;260</td><td>&yen;74</td><td><span style="color:#e74c3c;">+74</span></td><td>1668</td><td>11</td><td><span style="color:#e74c3c;">+11</span></td><td class="warn">79%</td></tr>
-<tr style="background:#EBF0FA;"><td>周其龙</td><td>&yen;3,056</td><td>&yen;255</td><td>&yen;0</td><td><span style="color:#27ae60;">-101</span></td><td>947</td><td>102</td><td><span style="color:#e74c3c;">+83</span></td><td class="warn">63%</td></tr>
-<tr style="background:#EBF0FA;"><td>江武</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>vs T-2</th><th>调度量</th><th>T-1调度</th><th>vs T-2</th><th>12H率</th><th>T-1 12H</th><th>vs T-2</th><th>24H率</th><th>T-1 24H</th><th>vs T-2</th></tr>
+<tr style="background:#EBF0FA;"><td>杨飞</td><td>&yen;12,582</td><td>&yen;629</td><td>&yen;612</td><td><span style="color:#e74c3c;">+195</span></td><td>4760</td><td>236</td><td><span style="color:#e74c3c;">+76</span></td><td>63%</td><td>50%</td><td><span style="color:#27ae60;">+21%</span></td><td>96%</td><td>50%</td><td><span style="color:#e74c3c;">-39%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>付胜国</td><td>&yen;11,427</td><td>&yen;571</td><td>&yen;390</td><td><span style="color:#e74c3c;">+126</span></td><td>3923</td><td>151</td><td><span style="color:#e74c3c;">+51</span></td><td>79%</td><td>56%</td><td><span style="color:#e74c3c;">-15%</span></td><td>97%</td><td>56%</td><td><span style="color:#e74c3c;">-38%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>钱绍波</td><td>&yen;9,870</td><td>&yen;519</td><td>&yen;424</td><td><span style="color:#e74c3c;">+226</span></td><td>3183</td><td>164</td><td><span style="color:#e74c3c;">+87</span></td><td>79%</td><td>65%</td><td><span style="color:#e74c3c;">-11%</span></td><td>97%</td><td>65%</td><td><span style="color:#e74c3c;">-23%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>陈敏</td><td>&yen;7,254</td><td>&yen;518</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>2091</td><td>0</td><td><span style="color:#999;">0</span></td><td>70%</td><td>-</td><td>-</td><td>99%</td><td>-</td><td>-</td></tr>
+<tr style="background:#EBF0FA;"><td>王保松</td><td>&yen;6,374</td><td>&yen;398</td><td>&yen;330</td><td><span style="color:#e74c3c;">+330</span></td><td>90</td><td>68</td><td><span style="color:#e74c3c;">+68</span></td><td>19%</td><td>15%</td><td><span style="color:#27ae60;">+15%</span></td><td>36%</td><td>15%</td><td><span style="color:#27ae60;">+15%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>王赐福</td><td>&yen;5,562</td><td>&yen;327</td><td>&yen;25</td><td><span style="color:#e74c3c;">+25</span></td><td>2358</td><td>10</td><td><span style="color:#e74c3c;">+10</span></td><td>59%</td><td>50%</td><td><span style="color:#27ae60;">+50%</span></td><td>97%</td><td>50%</td><td><span style="color:#27ae60;">+50%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>冯训季</td><td>&yen;4,418</td><td>&yen;260</td><td>&yen;28</td><td><span style="color:#e74c3c;">+28</span></td><td>1668</td><td>11</td><td><span style="color:#e74c3c;">+11</span></td><td>79%</td><td>0%</td><td><span style="color:#999;">-</span></td><td>98%</td><td>0%</td><td><span style="color:#999;">-</span></td></tr>
+<tr style="background:#EBF0FA;"><td>周其龙</td><td>&yen;3,056</td><td>&yen;255</td><td>&yen;72</td><td><span style="color:#e74c3c;">+72</span></td><td>947</td><td>102</td><td><span style="color:#e74c3c;">+83</span></td><td>63%</td><td>75%</td><td><span style="color:#27ae60;">+23%</span></td><td>94%</td><td>77%</td><td><span style="color:#27ae60;">+20%</span></td></tr>
+<tr style="background:#EBF0FA;"><td>江武</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#27AE60;">定点（8人）<span>小计 &yen;21,115</span></div>
 <table>
-<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
-<tr style="background:#E8F8F0;"><td>刘亚芳</td><td>&yen;5,720</td><td>&yen;336</td><td>&yen;165</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>郭斌</td><td>&yen;6,240</td><td>&yen;328</td><td>&yen;180</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>王华</td><td>&yen;2,465</td><td>&yen;176</td><td>&yen;165</td><td><span style="color:#e74c3c;">+165</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>薛超</td><td>&yen;3,120</td><td>&yen;173</td><td>&yen;165</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>戎国春</td><td>&yen;2,970</td><td>&yen;165</td><td>&yen;165</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>李涵</td><td>&yen;600</td><td>&yen;150</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>解德里</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
-<tr style="background:#E8F8F0;"><td>魏良刚</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">-</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>vs T-2</th><th>调度量</th><th>T-1调度</th><th>vs T-2</th><th>12H率</th><th>T-1 12H</th><th>vs T-2</th><th>24H率</th><th>T-1 24H</th><th>vs T-2</th></tr>
+<tr style="background:#E8F8F0;"><td>刘亚芳</td><td>&yen;5,720</td><td>&yen;336</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>郭斌</td><td>&yen;6,240</td><td>&yen;328</td><td>&yen;90</td><td><span style="color:#27ae60;">-90</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>王华</td><td>&yen;2,465</td><td>&yen;176</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>薛超</td><td>&yen;3,120</td><td>&yen;173</td><td>&yen;165</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>戎国春</td><td>&yen;2,970</td><td>&yen;165</td><td>&yen;165</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>李涵</td><td>&yen;600</td><td>&yen;150</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>解德里</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr style="background:#E8F8F0;"><td>魏良刚</td><td>&yen;0</td><td>&yen;0</td><td>&yen;0</td><td><span style="color:#999;">0</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#E74C3C;">换电（1人）<span>小计 &yen;12,994</span></div>
 <table>
-<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
-<tr style="background:#FDEDEC;"><td>葛宇</td><td>&yen;12,994</td><td>&yen;650</td><td>&yen;678</td><td><span style="color:#e74c3c;">+74</span></td><td>0</td><td>0</td><td><span style="color:#999;">-</span></td><td>-</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>vs T-2</th><th>调度量</th><th>T-1调度</th><th>vs T-2</th><th>12H率</th><th>T-1 12H</th><th>vs T-2</th><th>24H率</th><th>T-1 24H</th><th>vs T-2</th></tr>
+<tr style="background:#FDEDEC;"><td>葛宇</td><td>&yen;12,994</td><td>&yen;650</td><td>&yen;510</td><td><span style="color:#e74c3c;">+212</span></td><td>0</td><td>0</td><td><span style="color:#999;">0</span></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 </div>
-<p class="footer">薪资周期5/1-5/9 | 调度周期5/1-5/20 | 日均薪资=薪资/实际出勤天数</p>
+<p class="footer">数据周期5/1-5/20 | 日均=薪资/出勤天数 | T-1=05/20 T-2=05/19</p>
 </body>
 </html>
