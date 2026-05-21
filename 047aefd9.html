@@ -7,37 +7,38 @@
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;padding:15px;background:#f0f2f5;margin:0}
 h2{color:#333;border-bottom:3px solid #4472C4;padding-bottom:10px;font-size:18px}
-.summary{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:14px}
-.summary span{margin-right:18px;display:inline-block;margin-bottom:5px}
-.t1box{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:13px;border-left:4px solid #f39c12}
-.job-section{background:#fff;border-radius:10px;margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
+.card{background:#fff;padding:14px 18px;border-radius:10px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:13px;line-height:1.8}
+.t1card{border-left:4px solid #f39c12}
+.job-section{background:#fff;border-radius:10px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
 .job-title{padding:10px 16px;font-size:14px;font-weight:bold;color:#fff;display:flex;justify-content:space-between;align-items:center}
 .job-title span{font-size:12px;font-weight:normal;opacity:.9}
-table{border-collapse:collapse;width:100%;font-size:12px}
-th{background:#f8f9fa;color:#555;padding:8px 4px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
-td{padding:7px 4px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+table{border-collapse:collapse;width:100%;font-size:11px}
+th{background:#f8f9fa;color:#555;padding:7px 3px;text-align:center;white-space:nowrap;border-bottom:2px solid #eee}
+td{padding:6px 3px;text-align:center;border-bottom:1px solid #f0f0f0;white-space:nowrap}
 tr:hover{background:#f5f8ff}
 .high{color:#e74c3c;font-weight:bold}.good{color:#27ae60;font-weight:bold}.warn{color:#f39c12}
-.footer{color:#999;font-size:12px;margin-top:15px;text-align:center}
+.footer{color:#999;font-size:11px;margin-top:15px;text-align:center}
 </style>
 </head>
 <body>
 <h2>&#128202; 刘博文 - 运维指标明细</h2>
-<div class="summary">
-<span>&#128101; 运维人数：<b>1</b></span>
-<span>&#128176; 薪资合计：<b>&yen;4,910</b></span>
+<div class="card">
+&#128101; 运维人数：<b>1</b> &nbsp;&nbsp; &#128176; 薪资合计：<b>&yen;4,910</b>
 </div>
-<div class="t1box">
-<b>T-1数据（薪资2026/5/9 / 调度2026-05-20）vs T-2变化：</b><br>
-T-1薪资：&yen;308（较T-2 <span style="color:#e74c3c;">+2</span>）&nbsp;&nbsp;T-1调度量：61（较T-2 <span style="color:#27ae60;">-70</span>）
+<div class="card t1card">
+<b>&#9200; T-1(05/20) vs T-2(05/19)</b><br>
+薪资：T-1 &yen;147 | T-2 &yen;303 | 变化 <span style="color:#27ae60;">-155</span><br>
+调度量：T-1 61 | T-2 131 | 变化 <span style="color:#27ae60;">-70</span><br>
+12H出单率：T-1 82% | T-2 89% | 变化 <span style="color:#e74c3c;">-7%</span><br>
+24H出单率：T-1 82% | T-2 91% | 变化 <span style="color:#e74c3c;">-9%</span>
 </div>
 <div class="job-section">
 <div class="job-title" style="background:#4472C4;">司机（1人）<span>小计 &yen;4,910</span></div>
 <table>
-<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>较T-2</th><th>调度量</th><th>T-1调度</th><th>较T-2</th><th>12H出单率</th></tr>
-<tr style="background:#EBF0FA;"><td>朱志伟</td><td>&yen;4,910</td><td>&yen;273</td><td>&yen;308</td><td><span style="color:#e74c3c;">+2</span></td><td>2727</td><td>61</td><td><span style="color:#27ae60;">-70</span></td><td class="good">86%</td></tr>
+<tr><th>姓名</th><th>薪资</th><th>日均</th><th>T-1薪资</th><th>vs T-2</th><th>调度量</th><th>T-1调度</th><th>vs T-2</th><th>12H率</th><th>T-1 12H</th><th>vs T-2</th><th>24H率</th><th>T-1 24H</th><th>vs T-2</th></tr>
+<tr style="background:#EBF0FA;"><td>朱志伟</td><td>&yen;4,910</td><td>&yen;273</td><td>&yen;147</td><td><span style="color:#27ae60;">-155</span></td><td>2727</td><td>61</td><td><span style="color:#27ae60;">-70</span></td><td>86%</td><td>82%</td><td><span style="color:#e74c3c;">-7%</span></td><td>94%</td><td>82%</td><td><span style="color:#e74c3c;">-9%</span></td></tr>
 </table>
 </div>
-<p class="footer">薪资周期5/1-5/9 | 调度周期5/1-5/20 | 日均薪资=薪资/实际出勤天数</p>
+<p class="footer">数据周期5/1-5/20 | 日均=薪资/出勤天数 | T-1=05/20 T-2=05/19</p>
 </body>
 </html>
